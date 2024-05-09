@@ -1,0 +1,52 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <style>
+      
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 5px;
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 130%; /* Ratio d'aspect 16:9 pour une vidéo responsive */
+    }
+
+    .video-wrapper video {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-grid">
+    <div class="video-wrapper">
+      <video controls>
+        <source src="ddd.mp4" type="video/mp4">
+        Votre navigateur ne prend pas en charge la lecture de vidéos HTML5.
+      </video>
+    </div>
+    <div class="video-wrapper">
+      <video controls>
+        <source src="xc.mp4" type="video/mp4">
+        Votre navigateur ne prend pas en charge la lecture de vidéos HTML5.
+      </video>
+    </div>
+    <div class="video-wrapper">
+      <video controls>
+        <source src="ee.mp4" type="video/mp4">
+        Votre navigateur ne prend pas en charge la lecture de vidéos HTML5.
+      </video>
+    </div>
+    <div class="video-wrapper">
+      <video controls>
+        <source src="h.mp4" type="video/mp4">
+        Votre navigateur ne prend pas en charge la lecture de vidéos HTML5.
+      </video>
+    </div>
+  </div>
+</body>
+</html>
